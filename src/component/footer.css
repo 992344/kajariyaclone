@@ -1,0 +1,33 @@
+
+.row{
+     display: grid;
+     grid-template-columns: 20% 20% 20% 20% 20%;
+     width:100%;
+     height: 100%;
+    
+     grid-column-gap: 110px;
+     padding-top: 30px;
+}
+
+.end{
+     margin-left: 40px;
+     background-color:hwb(47 89% 7%);
+     margin-right: 40px;
+}
+p{
+     margin-bottom: 5px;
+}
+a{
+     text-decoration: none;
+     font-size:small;
+     color: rgb(40, 40, 49);    
+}
+h4{
+     color: rgb(68, 68, 95);
+}
+h1{
+     color: rgb(60, 60, 248);
+}
+i{
+     margin-inline-start: 3px;
+}

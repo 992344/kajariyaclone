@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+#navbar{
+  background-color:rgb(194, 233, 245);
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+#navbar.fixed{
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navbarSupportedContent li {
+  position: relative;
+  padding-inline: 20px;
+}
+#navbarSupportedContent li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 1;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip : text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #00050e, #00090c 50%, rgb(24, 22, 22) 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+}
+#navbarSupportedContent li a:before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  bottom: -3px;
+  z-index: 0;
+  position: absolute;
+  background: #21163a;
+  font-weight: 100;
+  /* transition: all 0.3s ease-in-out; */
+}
+#navbarSupportedContent li a:hover {
+  background-position: 0%;
+}
+#navbarSupportedContent li a:hover:before {
+  width: 100%;
+}
+.btn btn-primary active{
+     color: #303461;
+     border: none;
+}
+.navbar-brand{
+     color: rgb(50, 5, 109);
+     font-size: xx-large;
+     font-weight: bolder;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-style:oblique;
+}
+
+.nav-item:hover .dropdown-menu{display: block;}
+
+/* --------------------main page----------------------- */
+.carousel-item{
+     padding: 5px 70px;
+}
+.dropdown-item{
+     font-size: 0.5rem;
+     font-weight: lighter;
+     color: #5e5f70;
+}
+
+
+/* -------------------------main1.css----------------- */
+
+.container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width:100%;
+  height: 100vh;
+  background-color:hwb(47 89% 7%) ;
+  margin-top: 20px;
+  
+  
+}
+.main{
+  width: px;
+  padding-top: 15px;
+  padding-left: 10px;
+
+}
+p[class=p1]{
+  color: rgb(52, 5, 182);
+}
+h1{
+  font-style:oblique;
+}
+input[type=button]{
+  padding: bottom 30px;
+  background-color:#1383ec ; 
+  border-radius: 1px;border-color: antiquewhite;
+  margin: 15px 15px;
+  font-size: 0.95;
+}
+
+.container1{
+  display:grid;
+}
+.page2{
+  display:flex;
+  background-color:hwb(47 89% 7%) 
+
+}
+.row {
+padding-left: 50px;
+padding-top: 50px;
+}
+
+
+
+/* --------------css for modal --------------- */
+
+/* style for cart */
+
+
+
+
+article {
+  width: 80%;
+  margin: auto;
+}
+
+.cart_box img {
+  width: 50px;
+  height: 50px;
+}
+.cart_img {
+  display: flex;
+  width: 400px;
+}
+
+.cart_img p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.cart_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid skyblue;
+  padding-bottom: 5px;
+}
+
+.cart_box div:nth-child(2) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: skyblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart_box div:nth-child(3) button:hover {
+  background-color: darkseagreen;
+}
+.cart_box div:nth-child(3) span {
+  background-color: lightgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.totalQuantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalQuantity span:nth-child(1) {
+  font-size: 1.5rem;
+  color: rgb(12, 86, 116);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.totalQuantity span:nth-child(2) {
+  font-size: 1.5rem;
+  color: rgb(240, 41, 26);
+  font-weight: bold;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total span:nth-child(1) {
+  font-size: 1.5rem;
+  color: rgb(8, 64, 87);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.total span:nth-child(2) {
+  font-size: 1.5rem;
+  color: green;
+  font-weight: bold;
+}
